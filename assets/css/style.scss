@@ -33,9 +33,55 @@ body {
   display: block;
 }
 
-/* DIANA/HEP color scheme -style links */
 
+/* DIANA/HEP color scheme -style links */
+/*
 a{color:#2200AA;text-decoration:none;}
 a:hover,a:focus{color:#2C3E50;text-decoration:underline;}
+*/
+
+
+/*settings for hover mode in the main navigation: */
+nav .navbar-brand:hover {
+	text-shadow: 1px 0px 0px white;
+}
+
+nav .nav-link:hover {
+	text-shadow:1px 0px 0px white;
+}
+nav .dropdown-item:hover {
+	text-shadow:1px 0px 0px black;
+	}
+
+/*settings for hyperlinks in the main body:  */
+main a:link {
+	color: #06C;
+	text-decoration: underline;
+}
+
+main a:visited {	
+	color: #7598BB;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+main a:focus {
+	color: #7598BB;
+	text-decoration: underline;
+}
+
+main a:hover {
+	font-weight: normal;
+	color: #06C;
+	text-shadow: 1px 0px 0px #06C;
+	text-decoration: underline;
+	
+}
+
+main a:active {
+	color:#06C;
+	text-shadow: 1px 0px 1px #06C;
+	text-decoration: underline;
+}
 
 
