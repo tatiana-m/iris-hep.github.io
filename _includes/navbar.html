@@ -1,38 +1,100 @@
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="/"><span class="fa fa-home"></span>&nbsp;&nbsp;IRIS-HEP</a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light" id="main_navbar">
+	<div class="container">
+        <a class="navbar-brand" href="/"><span class="fa fa-home"></span>&nbsp;&nbsp;IRIS-HEP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/docs" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="/about/overview">Overview</a>
-				<a class="dropdown-item" href="/about/executive-board">Executive Board</a>
-                <a class="dropdown-item" href="/about/team">Full Team</a>
-				<a class="dropdown-item" href="/about/steering-board">Steering Board</a>
-				<a class="dropdown-item" href="/about/advisory-panel">Advisory Panel</a>
-				<a class="dropdown-item" href="/about/code-of-conduct">Code of Conduct</a>
-  </div>
-              </li>
-              <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/docs" role="button" aria-haspopup="true" aria-expanded="false">Connect</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="https://indico.cern.ch/category/10492/">Meeting Agenda (Indico)</a>
-                <a class="dropdown-item" href="https://vidyoportal.cern.ch/join/8ssmWH8zau">Vidyo Room</a>
-                <a class="dropdown-item" href="https://www.youtube.com/channel/UC8Dmx4MYjp6RQ9ngc58Ujmg?view_as=subscriber">YouTube</a>
-                <a class="dropdown-item" href="/contact.html">Contact</a>
-  </div>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="/news">News</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="/jobs">Jobs</a>
-              </li>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/docs" role="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="/about/overview">Overview</a></li>
+						<div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/about/executive-board">Executive Board</a></li>
+						<li><a class="dropdown-item" href="/about/team">Full Team</a></li>
+						<li><a class="dropdown-item" href="/about/steering-board">Steering Board</a></li>
+						<li><a class="dropdown-item" href="/about/advisory-panel">Advisory Panel</a></li>
+						<div class="dropdown-divider"></div>
+						<li><a class="dropdown-item" href="/about/code-of-conduct">Code of Conduct</a></li>
+						
+                        <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <li><a class="dropdown-item" href="#">Page1</a></li>
+                                    <li><a class="dropdown-item" href="#">Page2</a></li>
+                                    <li><a class="dropdown-item" href="#">Page3</a></li>      <!-- extra  </li> removed-->        
+                                    <div class="dropdown-divider"></div>
+                                    <li class="nav-item dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Dropdown lvl2
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                                <li><a class="dropdown-item" href="#">page1 with really long name compared to the others</a></li>
+                                                <li><a class="dropdown-item" href="#">page2</a></li>
+                                                <div class="dropdown-divider"></div>
+                                                <li><a class="dropdown-item" href="#">page3 </a></li>   <!-- And here!-->                     
+                                            </ul>
+									
+                                    </li> 
+                                </ul>
+                             </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>   <!--extra </li> removed -->
+                    </ul>
+                </li>
+				
+				
+			
+				
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="/docs" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Connect
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://indico.cern.ch/category/10492/">Meeting Agenda (Indico)</a></li>
+                        <li><a class="dropdown-item" href="https://vidyoportal.cern.ch/join/8ssmWH8zau">Vidyo Room</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC8Dmx4MYjp6RQ9ngc58Ujmg?view_as=subscriber">YouTube</a></li>   <!--extra </li> removed -->
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/contact.html">Contact</a></li>   
+                    </ul>
+                </li>
+				
+			
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+				
+				
+				
+				
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="/news">News</a>
+                </li>
+				
+                <li class="nav-item active">
+                    <a class="nav-link" href="/jobs">Jobs</a>
+                </li>
             </ul>
-          </div>
+			<!--
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+			-->
+			
         </div>
-      </nav>
+	</div>
+</nav>
+    
+<script>
+	$(function () {
+		$('#main_navbar').bootnavbar();
+	})
+</script>
+	
