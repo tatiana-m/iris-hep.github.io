@@ -3,6 +3,7 @@ permalink: /index.html
 layout: main
 title: Institute for Research and Innovation in Software
 bgimage: assets/images/Tprime-200pu-PhaseII-black-arctic-main-image.jpg
+barelogo: assets/images/IRIS-HEP-Logo.png
 ---
 <h3>Computational and data science research to enable discoveries in fundamental physics</h3>
 <br>
@@ -13,32 +14,87 @@ The IRIS-HEP project was funded on 1 September, 2018, and is ramping up its acti
 <br>
 <h4>Upcoming Events:</h4>
 IRIS-HEP team members are involved in organizing the following events:
-<ul>
-{% assign event_items = site.data.events %}
-{% for event_hash in event_items  %}
-  {% assign event = event_hash[1] %}
-  {% if event.status == 'current' %}
-  <li> {{event.dates}} - {{event.name}} </li>
-  <ul>
-      <li> <i>{{event.location}}</i> </li>
-      <li> <a href="{{event.website}}">Website</a> </li>
-  </ul>
-  {% endif %}
-{% endfor %}
-</ul>
+
+
+<br>
+
+<div class="container">
+  <div id="accordion">
+    
+	{% assign event_items = site.data.events %}
+	{% assign event_number = 0 %}
+	{% for event_hash in event_items  %}
+		{% assign event = event_hash[1] %}
+		{% if event.status == 'current' %}
+			{% assign event_number = event_number | plus: 1 %}
+			{% assign event_id = event_number | downcase %}
+	
+		
+			<div class="card">		
+				<div class="card-header">
+					<a class="card-link" data-toggle="collapse" href="#{{ "collapse" | append: event_id }}">
+						{{ event.dates }} - {{ event.name }}
+					</a>
+				</div>
+				<div id="{{ "collapse" | append: event_id }}" class="collapse" data-parent="#accordion">
+					<div  class="card-body">
+						<ul>
+							<li> <b>Venue: </b><i>{{ event.location }}</i> </li>
+							<li> <a href="{{ event.website }}">Website</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+				
+		{% endif %}
+	{% endfor %}
+	  
+  </div>
+	
+</div>
+
+<br>
 
 <h4>Past Events:</h4>
-<ul>
-{% assign event_items = site.data.events %}
-{% for event_hash in event_items  %}
-  {% assign event = event_hash[1] %}
-  {% if event.status == 'past' %}
-  <li> {{event.dates}} - {{event.name}} </li>
-  <ul>
-      <li> <i>{{event.location}}</i> </li>
-      <li> <a href="{{event.website}}">Website</a> </li>
-  </ul>
-  {% endif %}
-{% endfor %}
-</ul>
+<br>
+
+
+<div class="container">
+  <div id="accordion2">
+    
+	{% assign event_items = site.data.events %}
+	{% assign event_number = 0 %}
+	{% for event_hash in event_items  %}
+		{% assign event = event_hash[1] %}
+		{% if event.status == 'past' %}
+			{% assign event_number = event_number | plus: 1 %}
+			{% assign event_id = event_number | downcase %}
+	
+		
+			<div class="card">		
+				<div class="card-header">
+					<a class="card-link" data-toggle="collapse" href="#{{ "Pcollapse" | append: event_id }}">
+						{{ event.dates }} - {{ event.name }}
+					</a>
+				</div>
+				<div id="{{ "Pcollapse" | append: event_id }}" class="collapse" data-parent="#accordion2">
+					<div  class="card-body">
+						<ul>
+							<li> <b> Venue: </b> <i>{{ event.location }}</i> </li>
+							<li> <a href="{{ event.website }}">Website</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+				
+		{% endif %}
+	{% endfor %}
+	  
+  </div>
+	
+</div>
+
+
+<
+
 
