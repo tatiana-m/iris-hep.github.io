@@ -1,12 +1,16 @@
-<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light" id="main_navbar">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="main_navbar">
 	<div class="container">
-        <a class="navbar-brand" href="/"><span class="fa fa-home"></span>&nbsp;&nbsp;IRIS-HEP</a>
+        <a class="navbar-brand" href="/">
+		<!--	<span class="fa fa-home"></span>   -->
+			<img src="/assets/images/IRIS-HEP-Logo.png" height="42">
+		<!--	&nbsp;&nbsp;IRIS-HEP    -->
+		</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto"> <!-- -mr-auto -->
 				<li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/docs" role="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">About</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -19,8 +23,8 @@
 						<div class="dropdown-divider"></div>
 						<li><a class="dropdown-item" href="/about/code-of-conduct">Code of Conduct</a></li>
 
-<!-- 2nd and 3rd level dropdowns template start:
-for 2nd and 3rd level the CSS and JS are already implemented
+
+
 						
 							<li class="nav-item dropdown">
                                 <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
@@ -47,35 +51,83 @@ for 2nd and 3rd level the CSS and JS are already implemented
                                     </li> 
                                 </ul>
                             </li>
-template end: 2nd and 3rd level dropdowns -->				
+				
                         <li><a class="dropdown-item" href="#">Something else here</a></li>   
                     </ul>
                 </li>
 				
-			
 				
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="/docs" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        Connect
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Project 1</a></li>
+                        <li><a class="dropdown-item" href="#">Project 2 </a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="#">Project 3</a></li>  
+                        <li><a class="dropdown-item" href="#">Project 4</a></li>   
+						
+                    </ul>
+                </li>
+					
+				
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="/docs" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Edication
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Fellowships</a></li>
+                        <li><a class="dropdown-item" href="#">Mission Statement</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="#">Best Practices</a></li>   
+                        <li><a class="dropdown-item" href="#">Resources</a></li>   
+					
+
+                    </ul>
+                </li>
+				
+				
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="/docs" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        For&nbsp;Members
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="https://indico.cern.ch/category/10492/">Meeting Agenda (Indico)</a></li>
                         <li><a class="dropdown-item" href="https://vidyoportal.cern.ch/join/8ssmWH8zau">Vidyo Room</a></li>
-                        <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC8Dmx4MYjp6RQ9ngc58Ujmg?view_as=subscriber">YouTube</a></li>   <!--extra </li> removed -->
                         <div class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="/contact.html">Contact</a></li>   
+                        <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC8Dmx4MYjp6RQ9ngc58Ujmg?view_as=subscriber">YouTube</a></li>   
                     </ul>
                 </li>
+						
+				
+				
 				              				
-				
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="/news">News</a>
+	            <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="/docs" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        News&nbsp;&&nbsp;Events
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/#">News</a></li>
+                        <li><a class="dropdown-item" href="https://vidyoportal.cern.ch/join/8ssmWH8zau">Events</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="/#">In Media</a></li>  
+                    </ul>
                 </li>
-				
+				            				
+								
                 <li class="nav-item active">
                     <a class="nav-link" href="/jobs">Jobs</a>
                 </li>
+				
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+				
             </ul>
 			
 <!--For Future search bar:
